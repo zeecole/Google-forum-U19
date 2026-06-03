@@ -58,6 +58,12 @@
       grid-template-columns: 1fr 1fr;
       gap: 18px;
     }
+    .hint {
+      font-weight: normal;
+      font-size: 13px;
+      color: #0a9396;
+      margin-top: 4px;
+    }
     button {
       margin-top: 25px;
       width: 100%;
@@ -94,7 +100,7 @@
       <p>PERSONALITY OF THE DAY FORM</p>
     </div>
 
-    <form action="https://formspree.io/f/xojzapwl" method="POST" enctype="multipart/form-data">
+    <form action="https://formspree.io/f/xojzapwl" method="POST">
       <div class="row">
         <div>
           <label>Full Name</label>
@@ -144,8 +150,9 @@
       <label>Favourite Quote</label>
       <textarea name="Favourite Quote" placeholder="Enter favourite quote"></textarea>
 
-      <label>Upload Photo</label>
-      <input type="file" name="Photo" accept="image/*" />
+      <label>Photo Link</label>
+      <input type="url" name="Photo Link" placeholder="Paste a link to your photo (Google Drive, Instagram, etc.)" />
+      <div class="hint">Upload your photo to Google Drive or Google Photos, set sharing to "Anyone with the link", then paste the link here.</div>
 
       <button type="submit">Submit Information</button>
     </form>
